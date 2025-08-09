@@ -1,172 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>O Segredo Para Fios Mais Fortes e Brilhantes | Revista Bem-Estar</title>
-  <meta name="description" content="Descubra a rotina simples que mulheres estão usando para fortalecer os fios e conquistar mais brilho. Conteúdo editorial, claro e direto." />
-  <link rel="preconnect" href="https://images.unsplash.com" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Long Beauty - Cabelos Fortes e Saudáveis</title>
   <style>
-    :root{
-      --brand:#7a3df0;      /* roxo moderno */
-      --brand-2:#ff4da6;    /* rosa vibrante */
-      --text:#1f1f1f;
-      --muted:#6b7280;
-      --bg:#fff;
-      --bg-soft:#faf7ff;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
-    header{position:sticky;top:0;background:#fff7ffbd;backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid #f2e8ff;z-index:5}
-    .nav{max-width:980px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
-    .logo{font-weight:800;letter-spacing:.2px;color:var(--brand)}
-    .tag{font-size:12px;color:#fff;background:var(--brand-2);padding:6px 10px;border-radius:999px}
-    .wrap{max-width:980px;margin:0 auto;padding:20px 16px}
-    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:center}
-    .hero h1{font-size:32px;line-height:1.15;margin:6px 0 10px}
-    .hero p{color:var(--muted);font-size:16px}
-    .hero img{width:100%;height:auto;border-radius:14px;box-shadow:0 8px 24px rgba(122,61,240,.15)}
-    .badge{display:inline-flex;gap:6px;align-items:center;background:#f6f1ff;color:#47207c;padding:6px 10px;border-radius:999px;font-size:12px}
-    .cta{display:inline-block;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;text-decoration:none;padding:14px 18px;border-radius:12px;font-weight:700;margin-top:12px}
-    .cta:hover{opacity:.92}
-    .grid{display:grid;gap:18px}
-    .two{grid-template-columns:1fr 1fr}
-    .sec{background:var(--bg-soft);border:1px solid #efe6ff;border-radius:16px;padding:18px}
-    h2{font-size:24px;margin:4px 0 10px}
-    ul{padding-left:18px;margin:8px 0}
-    li{margin:6px 0}
-    .card{border:1px solid #f1eaff;border-radius:14px;padding:14px;background:#fff}
-    .by{font-size:13px;color:var(--muted)}
-    .quote{font-size:15px;color:#4b5563;border-left:4px solid var(--brand-2);padding-left:12px}
-    .faq details{border:1px solid #efe6ff;background:#fff;border-radius:12px;padding:12px}
-    .faq details+details{margin-top:10px}
-    .footer{margin:24px 0 40px;color:#6b7280;font-size:12px;text-align:center}
-    .disclaimer{font-size:12px;color:#6b7280;margin-top:8px}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .highlight {
+      background: #ffe5e5;
+      border-left: 5px solid #b30000;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .highlight strong {
+      color: #b30000;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .btn {
+      display: block;
+      background-color: #b30000;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+      margin: 20px 0;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #800000;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      padding: 15px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <div class="logo">Revista Bem-Estar</div>
-      <div class="tag">Conteúdo editorial</div>
-    </div>
-  </header>
 
-  <main class="wrap">
-    <!-- HERO -->
-    <section class="hero">
-      <div>
-        <span class="badge">Tendência • Cabelo & Beleza</span>
-        <h1>Rotina simples que está ajudando brasileiras a ter <span style="color:var(--brand)">fios mais fortes</span> e brilho visível</h1>
-        <p class="by">Por Redação • Atualizado <span id="data"></span></p>
-        <p>Testamos uma combinação de hábitos e ativos queridos pelos especialistas — e o resultado chamou atenção das leitoras. Veja como aplicar no dia a dia e onde encontrar os produtos.</p>
-        <a class="cta" href="https://longbeauty.com.br/braip/?pv=pro9qdyk&af=afi65m71dn" rel="nofollow noopener">Ver página oficial</a>
-      </div>
-      <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1600&auto=format&fit=crop" alt="Cabelo longo e brilhante" />
-    </section>
+<header>
+  <h1>🚀 O Segredo para Cabelos Longos e Fortes</h1>
+</header>
 
-    <!-- BLOCO 1: História curta -->
-    <section class="grid two" style="margin-top:22px">
-      <article class="sec">
-        <h2>O que mudou na rotina?</h2>
-        <p>Focamos em três pilares: hidratação real, nutrição semanal e uso de um suplemento com vitaminas e minerais que <strong>apoiam a saúde dos fios</strong>. Em poucas semanas, leitoras relataram cabelo com toque mais encorpado e brilho consistente.</p>
-        <ul>
-          <li><strong>Hidratação</strong> 2–3x por semana</li>
-          <li><strong>Nutrição</strong> com óleos vegetais</li>
-          <li><strong>Suplementação</strong> com ativos de suporte*</li>
-        </ul>
-        <p class="disclaimer">*Suplementos não substituem alimentação equilibrada. Consulte profissionais de saúde em caso de dúvidas.</p>
-        <a class="cta" href="https://longbeauty.com.br/braip/?pv=pro9qdyk&af=afi65m71dn" rel="nofollow noopener">Conhecer Long Beauty</a>
-      </article>
-      <article class="sec">
-        <h2>Por que esse formato funciona?</h2>
-        <p>Rotinas simples são fáceis de seguir. Quando combinadas com ingredientes certos (biotina, colágeno, vitaminas do complexo B, zinco), tendem a <em>apoiar</em> força e aparência dos fios ao longo do tempo.</p>
-        <div class="card">
-          <div class="quote">“Consistência vence: alinhe lavagem, tratamento rápido e ativos que apoiem o bulbo capilar.”</div>
-          <p class="by">— Equipe Editorial</p>
-        </div>
-      </article>
-    </section>
+<div class="container">
+  <div class="highlight">
+    <p>Você sabia que 8 em cada 10 mulheres sofrem com <strong>queda capilar</strong> e <strong>fios fracos</strong> depois dos 25 anos?  
+    Descubra como recuperar o brilho, força e crescimento natural dos seus cabelos com um método aprovado e testado.</p>
+  </div>
 
-    <!-- Benefícios -->
-    <section class="sec" style="margin-top:22px">
-      <h2>Benefícios percebidos pelas leitoras</h2>
-      <div class="grid two">
-        <ul>
-          <li>Toque mais macio e sedoso</li>
-          <li>Fios com aparência mais encorpada</li>
-          <li>Brilho visível ao sol e em fotos</li>
-        </ul>
-        <ul>
-          <li>Menos frizz no dia a dia</li>
-          <li>Rotina fácil de manter</li>
-          <li>Visual mais saudável em poucas semanas</li>
-        </ul>
-      </div>
-      <a class="cta" href="https://longbeauty.com.br/braip/?pv=pro9qdyk&af=afi65m71dn" rel="nofollow noopener">Ver ofertas e disponibilidade</a>
-    </section>
+  <img src="https://longbeauty.com.br/wp-content/uploads/2023/09/long-beauty-produto.jpg" alt="Long Beauty">
 
-    <!-- Ingredientes/Ativos -->
-    <section class="grid two" style="margin-top:22px">
-      <article class="sec">
-        <h2>Ativos que a comunidade ama</h2>
-        <ul>
-          <li><strong>Biotina</strong> — aliada clássica do cuidado capilar</li>
-          <li><strong>Colágeno</strong> — suporte estrutural</li>
-          <li><strong>Complexo B</strong> — rotina energética</li>
-          <li><strong>Zinco</strong> — mineral essencial</li>
-        </ul>
-        <p class="disclaimer">Este conteúdo é informativo e não substitui orientação profissional.</p>
-      </article>
-      <article class="sec">
-        <img src="https://images.unsplash.com/photo-1604908176997-431621b2ccd1?q=80&w=1600&auto=format&fit=crop" alt="Ingredientes e cápsulas" style="border-radius:12px" />
-      </article>
-    </section>
+  <h2>💡 Por que o Long Beauty funciona tão bem?</h2>
+  <p>Com fórmula exclusiva e ingredientes naturais, o <strong>Long Beauty</strong> age de dentro para fora, fortalecendo a raiz e estimulando o crescimento dos fios.  
+  Resultados visíveis já nas primeiras semanas de uso!</p>
 
-    <!-- Depoimentos editoriais (brand-safe) -->
-    <section class="sec" style="margin-top:22px">
-      <h2>O que nossas leitoras contaram</h2>
-      <div class="grid two">
-        <div class="card">
-          <p class="quote">“Em 4 semanas senti o fio mais comportado e com brilho. Mantive a rotina certinha.”</p>
-          <p class="by">— Larissa M.</p>
-        </div>
-        <div class="card">
-          <p class="quote">“Gostei porque é simples: hidratação, nutrição e um suporte por dentro. Funcionou pra mim.”</p>
-          <p class="by">— Camila S.</p>
-        </div>
-      </div>
-      <a class="cta" href="https://longbeauty.com.br/braip/?pv=pro9qdyk&af=afi65m71dn" rel="nofollow noopener">Acessar a página oficial</a>
-    </section>
+  <h2>✨ Benefícios:</h2>
+  <ul>
+    <li>✔ Reduz a queda capilar</li>
+    <li>✔ Estimula o crescimento rápido</li>
+    <li>✔ Deixa os fios mais fortes e brilhantes</li>
+    <li>✔ 100% natural e sem efeitos colaterais</li>
+  </ul>
 
-    <!-- FAQ -->
-    <section class="faq" style="margin-top:22px">
-      <h2>Perguntas frequentes</h2>
-      <details>
-        <summary>Em quanto tempo vejo resultados?</summary>
-        <p>Varia de pessoa para pessoa. Muitas leitoras relatam melhora de aparência em semanas quando seguem a rotina completa.</p>
-      </details>
-      <details>
-        <summary>Posso usar com outros produtos?</summary>
-        <p>Sim, essa rotina é complementar. Em caso de condições específicas, procure um profissional.</p>
-      </details>
-      <details>
-        <summary>É preciso mudar alimentação?</summary>
-        <p>Hábitos saudáveis aceleram qualquer resultado estético. Hidratação e descanso contam muito.</p>
-      </details>
-    </section>
+  <a class="btn" href="https://longbeauty.com.br/braip/?pv=pro9qdyk&af=afi65m71dn">QUERO MEU LONG BEAUTY AGORA</a>
 
-    <p class="footer">
-      © <span id="ano"></span> Revista Bem-Estar • Conteúdo editorial.  
-      <br><span class="disclaimer">Este site pode conter links de afiliado. Resultados variam conforme rotina e individualidade.</span>
-    </p>
-  </main>
+  <p><em>Estoque limitado. Aproveite enquanto ainda está disponível!</em></p>
+</div>
 
-  <script>
-    const fmt = {year:'numeric',month:'long',day:'numeric'};
-    document.getElementById('data').textContent = new Date().toLocaleDateString('pt-BR', fmt);
-    document.getElementById('ano').textContent = new Date().getFullYear();
-  </script>
+<footer>
+  © 2025 Long Beauty - Todos os direitos reservados.
+</footer>
+
 </body>
 </html>
